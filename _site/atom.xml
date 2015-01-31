@@ -2,36 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Jekyll Bootstrap</title>
- <link href="http://username.github.io/" rel="self"/>
- <link href="http://username.github.io"/>
- <updated>2015-01-30T12:14:52-08:00</updated>
- <id>http://username.github.io</id>
+ <link href="http://xia0guang.github.io/" rel="self"/>
+ <link href="http://xia0guang.github.io"/>
+ <updated>2015-01-30T20:02:27-08:00</updated>
+ <id>http://xia0guang.github.io</id>
  <author>
-   <name>Name Lastname</name>
-   <email>blah@email.test</email>
+   <name>Xiaoguang Wu</name>
+   <email>wu890120@gmail.com</email>
  </author>
 
  
  <entry>
-   <title>这是第一篇日志</title>
-   <link href="http://username.github.io/2015/01/30/"/>
-   <updated>2015-01-30T00:00:00-08:00</updated>
-   <id>http://username.github.io/2015/01/</id>
-   <content type="html">
-&lt;h1 id=&quot;section&quot;&gt;这是第一篇日志&lt;/h1&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;如果说一切都是考验, 那我觉得我考验的已经足够多了. 我不知道是不是这样.&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
    <title>Jekyll Introduction</title>
-   <link href="http://username.github.io/lessons/2011/12/29/jekyll-introduction"/>
+   <link href="http://xia0guang.github.io/lessons/2011/12/29/jekyll-introduction"/>
    <updated>2011-12-29T00:00:00-08:00</updated>
-   <id>http://username.github.io/lessons/2011/12/29/jekyll-introduction</id>
+   <id>http://xia0guang.github.io/lessons/2011/12/29/jekyll-introduction</id>
    <content type="html">
 &lt;p&gt;This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
 Directly following the intro we’ll learn exactly &lt;em&gt;how&lt;/em&gt; Jekyll does what it does.&lt;/p&gt;
