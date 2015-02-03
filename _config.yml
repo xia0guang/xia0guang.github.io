@@ -14,8 +14,8 @@ author :
   name : Xiaoguang Wu
   email : wu890120@gmail.com
   github : xia0guang
-  twitter : username
-  feedburner : feedname
+#  twitter : username
+#  feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
