@@ -4,6 +4,7 @@ title: "First post"
 description: ""
 category: 
 tags: [first]
+disqus: false
 ---
 {% include JB/setup %}
 
