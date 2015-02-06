@@ -68,4 +68,14 @@ body {
 	border:1px solid #4C964D;
 	color:#FFF;
 }
+
+#gotop{
+    display:none;
+    width:55px;
+    height:55px;
+    position:fixed;
+    right:50px;
+    bottom:50px;
+    background:url(images/backtop2013.png) no-repeat -70px 0px;    
+}
 	
