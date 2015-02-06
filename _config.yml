@@ -82,7 +82,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : charcoffee
+      short_name : green-light
     livefyre :
       site_id : 123
     intensedebate :
