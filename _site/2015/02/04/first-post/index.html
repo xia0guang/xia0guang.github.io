@@ -15,6 +15,7 @@
     <!-- Le styles -->
     <link href="/assets/themes/twitter/css/1.4.0/bootstrap.css" rel="stylesheet">
     <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/twitter/css/syntaxhighlighter.css" rel="stylesheet" type="text/css" media="all">
 
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
@@ -135,7 +136,7 @@
   </ul>
 </blockquote>
 
-<p>请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 <i class="icon-file"></i> <strong>新文稿</strong> 或者使用快捷键 <code>Ctrl+Alt+N</code>。</p>
+<p>请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 <strong>新文稿</strong> 或者使用快捷键 <code>Ctrl+Alt+N。</code></p>
 
 <hr />
 
@@ -143,40 +144,15 @@
 
 <p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字，更棒的是，它还可以</p>
 
-<h3 id="latex">书写一个质能守恒公式<sup id="fnref:LaTeX"><a href="#fn:LaTeX" class="footnote">1</a></sup></h3>
+<h3 id="code">高亮一段代码<sup id="fnref:code"><a href="#fn:code" class="footnote">1</a></sup></h3>
 
-<script type="math/tex; mode=display">E=mc^2</script>
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="lineno">1</span> <span class="cp">#include&lt;stdio.h&gt;</span>
+<span class="lineno">2</span> 
+<span class="lineno">3</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="lineno">4</span> 	<span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello World.&quot;</span><span class="p">);</span>
+<span class="lineno">5</span> <span class="p">}</span></code></pre></div>
 
-<h3 id="code">高亮一段代码<sup id="fnref:code"><a href="#fn:code" class="footnote">2</a></sup></h3>
-
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">show</span>
-  <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span>
-  <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
-    <span class="nb">format</span><span class="o">.</span><span class="n">html</span> <span class="c1"># show.html.erb</span>
-    <span class="nb">format</span><span class="o">.</span><span class="n">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json</span><span class="p">:</span> <span class="vi">@widget</span> <span class="p">}</span>
-  <span class="k">end</span>
-<span class="k">end</span></code></pre></div>
-
-<h3 id="httpswwwzybuluocommdeditorurlhttpswwwzybuluocomstaticeditormd-helpmarkdown7-">高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-流程图">流程图</a></h3>
-
-<p>```flow
-st=&gt;start: Start
-op=&gt;operation: Your Operation
-cond=&gt;condition: Yes or No?
-e=&gt;end</p>
-
-<p>st-&gt;op-&gt;cond
-cond(yes)-&gt;e
-cond(no)-&gt;op
-```</p>
-
-<h3 id="httpswwwzybuluocommdeditorurlhttpswwwzybuluocomstaticeditormd-helpmarkdown8-">高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#8-序列图">序列图</a></h3>
-
-<p><code>seq
-Alice-&gt;Bob: Hello Bob, how are you?
-Note right of Bob: Bob thinks
-Bob--&gt;Alice: I am good thanks!
-</code></p>
+<!--more-->
 
 <h3 id="section">绘制表格</h3>
 
@@ -297,9 +273,6 @@ Bob--&gt;Alice: I am good thanks!
 
 <div class="footnotes">
   <ol>
-    <li id="fn:LaTeX">
-      <p>支持 <strong>LaTeX</strong> 编辑显示支持，例如：$\sum_{i=1}^n a_i=0$， 访问 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">MathJax</a> 参考更多使用方法。 <a href="#fnref:LaTeX" class="reversefootnote">&#8617;</a></p>
-    </li>
     <li id="fn:code">
       <p>代码高亮功能支持包括 Java, Python, JavaScript 在内的，<strong>四十一</strong>种主流编程语言。 <a href="#fnref:code" class="reversefootnote">&#8617;</a></p>
     </li>

@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [first]
 disqus: false
-excerpt:
 ---
 {% include JB/setup %}
 
@@ -24,7 +23,7 @@ excerpt:
 > * 撰写发布技术文稿（代码支持）
 > * 撰写发布学术论文（LaTeX 公式支持）
 
-请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 <i class="icon-file"></i> **新文稿** 或者使用快捷键 `Ctrl+Alt+N`。
+请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 **新文稿** 或者使用快捷键 `Ctrl+Alt+N。`
 
 ------
 
@@ -32,42 +31,17 @@ excerpt:
 
 Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，**粗体** 或者 *斜体* 某些文字，更棒的是，它还可以
 
-### 书写一个质能守恒公式[^LaTeX]
-
-$$E=mc^2$$
-
 ### 高亮一段代码[^code]
 
-{% highlight ruby %}
-def show
-  @widget = Widget(params[:id])
-  respond_to do |format|
-    format.html # show.html.erb
-    format.json { render json: @widget }
-  end
-end
+{% highlight c linenos %}
+#include<stdio.h>
+
+void main() {
+	printf("Hello World.");
+}
 {% endhighlight %}
 
-### 高效绘制 [流程图](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-流程图)
-
-```flow
-st=>start: Start
-op=>operation: Your Operation
-cond=>condition: Yes or No?
-e=>end
-
-st->op->cond
-cond(yes)->e
-cond(no)->op
-```
-
-### 高效绘制 [序列图](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#8-序列图)
-
-```seq
-Alice->Bob: Hello Bob, how are you?
-Note right of Bob: Bob thinks
-Bob-->Alice: I am good thanks!
-```
+<!--more-->
 
 ### 绘制表格
 
