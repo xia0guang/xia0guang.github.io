@@ -3,8 +3,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    
+    <title>Basic MarkDown Syntax for Jekyll</title>
+    <meta name="description" content="">
     <meta name="author" content="Ray Wu">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -112,10 +112,12 @@
 
       <div class="content">
         
-<ul class="posts">
-  
-    <li>
-    <h2><a href="/instruction/2015/02/04/first-post">Basic MarkDown Syntax for Jekyll</a></h2>
+<div class="page-header">
+  <h1>Basic MarkDown Syntax for Jekyll </small></h1>
+</div>
+
+<div class="row">
+  <div class="span10">
     
 <h6 id="this-is-repost-from-kramdown-syntax-documentationhttpkramdowngettalongorgsyntaxhtmlline-wrapping">this is repost from <a href="http://kramdown.gettalong.org/syntax.html#line-wrapping">kramdown syntax documentation</a></h6>
 
@@ -136,12 +138,128 @@
 &gt;&gt; Pardon my french
 </code></pre>
 
+<!--more-->
 
-
-    <a href="/instruction/2015/02/04/first-post">More » </a>
-    </li>
-  
+<h4 id="styling-text">Styling text</h4>
+<ul>
+  <li><strong>Bold</strong>: <code>**</code> or <code>__</code></li>
+  <li><em>Italic</em>: * or _</li>
 </ul>
+
+<h4 id="lists">Lists</h4>
+<pre><code>1. ordered list  
+  1. Item 1
+2. unordered list  
+  * Item 1
+  - Item 2
+</code></pre>
+
+<h4 id="code-formatting">Code formatting</h4>
+<p>inline: ` `<br />
+multiple lines: \~~~</p>
+
+<h4 id="code-highlight">Code Highlight</h4>
+<pre><code>{ % highlight python %}
+{ % endhighlight %}
+</code></pre>
+<p>display as:  </p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">):</span>  
+    <span class="n">retrun</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span></code></pre></div>
+
+<h4 id="links">Links</h4>
+<pre><code>[Display Text](Links)
+</code></pre>
+
+<h4 id="tables">Tables</h4>
+<pre><code>|First Header  | Second Header 
+------------- | ------------- 
+|Content Cell  | Content Cell 
+|Content Cell  | Content Cell|	 
+</code></pre>
+<p>display as: </p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">First Header</th>
+      <th style="text-align: left">Second Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Content Cell</td>
+      <td style="text-align: left">Content Cell</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Content Cell</td>
+      <td style="text-align: left">Content Cell</td>
+    </tr>
+  </tbody>
+</table>
+
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev disabled"><a>&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next disabled"><a>Next &rarr;</a>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'green-light'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>04 February 2015</span></div>
+
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#First-ref">First <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#MarkDown-ref">MarkDown <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+</div>
 
 
       </div>
