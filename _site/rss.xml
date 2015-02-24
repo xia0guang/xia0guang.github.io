@@ -5,17 +5,79 @@
         <description>Green  Light - Ray Wu</description>
         <link>http://xia0guang.github.io</link>
         <link>http://xia0guang.github.io</link>
-        <lastBuildDate>2015-02-24T01:50:57-08:00</lastBuildDate>
-        <pubDate>2015-02-24T01:50:57-08:00</pubDate>
+        <lastBuildDate>2015-02-24T15:32:57-08:00</lastBuildDate>
+        <pubDate>2015-02-24T15:32:57-08:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Learning Django (1)</title>
+                <description>
+&lt;p&gt;今天算是第一次正式的开始启用这个博客了, 第一篇是关于Django学习的, 这个Django本来一直就是想学但是没有真正的决定学习, 这次正好趁着同学有需求让我做一个最简单的网站的机会, 系统的学习一下如何使用Django. 本来其实我是不太会做笔记的, 从小到大就没有写过像样的笔记, 但是我觉得人有时候就得勇于做出改变和相信自己能成功改变, 坚持做好学习笔记这个算是我2015的一个目标吧. &lt;/p&gt;
+
+&lt;h3 id=&quot;django-&quot;&gt;Django 的安装&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;$ pip install django&lt;/code&gt;&lt;br /&gt;
+ 但是我要提到的是&lt;code&gt;virtualenv&lt;/code&gt;工具的使用, 这是一个创造isolated environment的工具, 可以为不同的virtual environment 安装不同版本的python, 不同的framework, 互不干扰, 很适合做学习开发使用.  以下是重要的virtualenv command:&lt;br /&gt;
+ &lt;!--more--&gt;&lt;br /&gt;
+ 1. &lt;code&gt;$ virtualenv venv&lt;/code&gt;: 在当前directory下创建virtual environment;  &lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code&gt;$ virtualenv -p /usr/bin/python2.7 venv&lt;/code&gt;: 设置python版本, 其中路径为所需版本python所在目录. (备注: Mac下面python3.4路径为/Library/Frameworks/Python.framework/Versions/3.4/bin/python3.4).  &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code&gt;$ source venv/bin/activate&lt;/code&gt;:激活virtual environment. 此时terminal应该显示前缀&lt;code&gt;(venv)Your-Computer:your_project UserName$ &lt;/code&gt;.    &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code&gt;$ deactivate&lt;/code&gt;:注销virtual environment.  &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code&gt;$ pip freeze &amp;gt; requirements.txt&lt;/code&gt; 和 &lt;code&gt;pip install -r requirements.txt&lt;/code&gt;: 分别为保存当前环境参数 和 load所需环境.   &lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;start-project&quot;&gt;Start Project&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;settings&quot;&gt;settings&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;TEMPLATES_DIRS&lt;/li&gt;
+      &lt;li&gt;STATICFILES_FIRS&lt;/li&gt;
+      &lt;li&gt;INSTALLED_APPS&lt;/li&gt;
+      &lt;li&gt;DATEBASE: 默认Sqlite3&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;urlspy&quot;&gt;urls.py&lt;/h3&gt;
+    &lt;p&gt;Project_Name文件夹下面的是根目录的url, e.g. www.example.com/***, 以及所有Apps的url, e.g. 如果Project 包括App1, App2, 则 include(App1.urls) 等.
+ App_Name文件夹下面的是对应App的下的url
+ url 的 Hierarchy是根据文件夹的Hierarchy来的.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;viewspy&quot;&gt;views.py&lt;/h3&gt;
+    &lt;p&gt;定义相应request的response, render 不同的templates, templates都存在Project文件夹下的templates文件夹, 并在settings下设置好参数.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;modelpy&quot;&gt;model.py&lt;/h3&gt;
+    &lt;p&gt;剩下的以后再加深… &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;static-files&quot;&gt;static Files&lt;/h3&gt;
+    &lt;p&gt;static files 需要在Project文件夹下建立static文件夹, 并在settings下设置好参数, 但是建议一般都选择重新建立一个app或者服务器来专门存static files.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+                <link>http://xia0guang.github.io/development/2015/02/24/django1</link>
+                <guid>http://xia0guang.github.io/development/2015/02/24/django1</guid>
+                <pubDate>2015-02-24T00:00:00-08:00</pubDate>
+        </item>
 
         <item>
                 <title>Basic MarkDown Syntax for Jekyll</title>
                 <description>
 &lt;h6 id=&quot;this-is-repost-from-kramdown-syntax-documentationhttpkramdowngettalongorgsyntaxhtmlline-wrapping&quot;&gt;this is repost from &lt;a href=&quot;http://kramdown.gettalong.org/syntax.html#line-wrapping&quot;&gt;kramdown syntax documentation&lt;/a&gt;&lt;/h6&gt;
-
-&lt;hr /&gt;
 
 &lt;h4 id=&quot;paragraphs&quot;&gt;Paragraphs&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;On July 2, an alien mothership entered Earth&#39;s orbit and deployed several dozen saucer-shaped &quot;destroyer&quot; spacecraft, each 15 miles (24 km) wide.

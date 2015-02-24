@@ -10,8 +10,6 @@ disqus: false
 
 ###### this is repost from [kramdown syntax documentation](http://kramdown.gettalong.org/syntax.html#line-wrapping)
 
-----------
-
 ####Paragraphs
 ~~~
 On July 2, an alien mothership entered Earth's orbit and deployed several dozen saucer-shaped "destroyer" spacecraft, each 15 miles (24 km) wide.

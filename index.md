@@ -11,6 +11,8 @@ layout: default
 
     <a href="{{ BASE_PATH }}{{ post.url }}">More » </a>
     </li>
+    <hr />
+    
   {% endfor %}
 </ul>
 

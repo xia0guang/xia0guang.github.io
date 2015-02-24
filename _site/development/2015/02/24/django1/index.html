@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Basic MarkDown Syntax for Jekyll</title>
+    <title>Learning Django (1)</title>
     <meta name="description" content="">
     <meta name="author" content="Ray Wu">
 
@@ -113,99 +113,77 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>Basic MarkDown Syntax for Jekyll </small></h1>
+  <h1>Learning Django (1) </small></h1>
 </div>
 
 <div class="row">
   <div class="span10">
     
-<h6 id="this-is-repost-from-kramdown-syntax-documentationhttpkramdowngettalongorgsyntaxhtmlline-wrapping">this is repost from <a href="http://kramdown.gettalong.org/syntax.html#line-wrapping">kramdown syntax documentation</a></h6>
+<p>今天算是第一次正式的开始启用这个博客了, 第一篇是关于Django学习的, 这个Django本来一直就是想学但是没有真正的决定学习, 这次正好趁着同学有需求让我做一个最简单的网站的机会, 系统的学习一下如何使用Django. 本来其实我是不太会做笔记的, 从小到大就没有写过像样的笔记, 但是我觉得人有时候就得勇于做出改变和相信自己能成功改变, 坚持做好学习笔记这个算是我2015的一个目标吧. </p>
 
-<h4 id="paragraphs">Paragraphs</h4>
-<pre><code>On July 2, an alien mothership entered Earth's orbit and deployed several dozen saucer-shaped "destroyer" spacecraft, each 15 miles (24 km) wide.
-</code></pre>
+<h3 id="django-">Django 的安装</h3>
+<p><code>$ pip install django</code><br />
+ 但是我要提到的是<code>virtualenv</code>工具的使用, 这是一个创造isolated environment的工具, 可以为不同的virtual environment 安装不同版本的python, 不同的framework, 互不干扰, 很适合做学习开发使用.  以下是重要的virtualenv command:<br />
+ <!--more--><br />
+ 1. <code>$ virtualenv venv</code>: 在当前directory下创建virtual environment;  </p>
 
-<h4 id="headings">Headings</h4>
-<pre><code># The largest heading (an &lt;h1&gt; tag)   
-## The second largest heading (an &lt;h2&gt; tag)  
-###### The 6th largest heading (an &lt;h6&gt; tag)  
-</code></pre>
+<ol>
+  <li>
+    <p><code>$ virtualenv -p /usr/bin/python2.7 venv</code>: 设置python版本, 其中路径为所需版本python所在目录. (备注: Mac下面python3.4路径为/Library/Frameworks/Python.framework/Versions/3.4/bin/python3.4).  </p>
+  </li>
+  <li>
+    <p><code>$ source venv/bin/activate</code>:激活virtual environment. 此时terminal应该显示前缀<code>(venv)Your-Computer:your_project UserName$ </code>.    </p>
+  </li>
+  <li>
+    <p><code>$ deactivate</code>:注销virtual environment.  </p>
+  </li>
+  <li>
+    <p><code>$ pip freeze &gt; requirements.txt</code> 和 <code>pip install -r requirements.txt</code>: 分别为保存当前环境参数 和 load所需环境.   </p>
+  </li>
+</ol>
 
-<h4 id="blockquotes">Blockquotes</h4>
-<pre><code>&gt;In the words of Abraham Lincoln: 
-&gt;&gt; Pardon my french
-</code></pre>
+<h3 id="start-project">Start Project</h3>
 
-<!--more-->
-
-<h4 id="styling-text">Styling text</h4>
-<ul>
-  <li><strong>Bold</strong>: <code>**</code> or <code>__</code></li>
-  <li><em>Italic</em>: * or _</li>
-</ul>
-
-<h4 id="lists">Lists</h4>
-<pre><code>1. ordered list  
-  1. Item 1
-2. unordered list  
-  * Item 1
-  - Item 2
-</code></pre>
-
-<h4 id="code-formatting">Code formatting</h4>
-<p>inline: ` `<br />
-multiple lines: \~~~</p>
-
-<h4 id="code-highlight">Code Highlight</h4>
-<pre><code>{ % highlight python %}
-{ % endhighlight %}
-</code></pre>
-<p>display as:  </p>
-
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">):</span>  
-    <span class="n">retrun</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span></code></pre></div>
-
-<h4 id="links">Links</h4>
-<pre><code>[Display Text](Links)
-</code></pre>
-
-<h4 id="tables">Tables</h4>
-<pre><code>|First Header  | Second Header 
-------------- | ------------- 
-|Content Cell  | Content Cell 
-|Content Cell  | Content Cell|	 
-</code></pre>
-<p>display as: </p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">First Header</th>
-      <th style="text-align: left">Second Header</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">Content Cell</td>
-      <td style="text-align: left">Content Cell</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Content Cell</td>
-      <td style="text-align: left">Content Cell</td>
-    </tr>
-  </tbody>
-</table>
+<ol>
+  <li>
+    <h3 id="settings">settings</h3>
+    <ul>
+      <li>TEMPLATES_DIRS</li>
+      <li>STATICFILES_FIRS</li>
+      <li>INSTALLED_APPS</li>
+      <li>DATEBASE: 默认Sqlite3</li>
+    </ul>
+  </li>
+  <li>
+    <h3 id="urlspy">urls.py</h3>
+    <p>Project_Name文件夹下面的是根目录的url, e.g. www.example.com/***, 以及所有Apps的url, e.g. 如果Project 包括App1, App2, 则 include(App1.urls) 等.
+ App_Name文件夹下面的是对应App的下的url
+ url 的 Hierarchy是根据文件夹的Hierarchy来的.</p>
+  </li>
+  <li>
+    <h3 id="viewspy">views.py</h3>
+    <p>定义相应request的response, render 不同的templates, templates都存在Project文件夹下的templates文件夹, 并在settings下设置好参数.</p>
+  </li>
+  <li>
+    <h3 id="modelpy">model.py</h3>
+    <p>剩下的以后再加深… </p>
+  </li>
+  <li>
+    <h3 id="static-files">static Files</h3>
+    <p>static files 需要在Project文件夹下建立static文件夹, 并在settings下设置好参数, 但是建议一般都选择重新建立一个app或者服务器来专门存static files.</p>
+  </li>
+</ol>
 
 
     <hr>
     <div class="pagination">
       <ul>
       
-        <li class="prev disabled"><a>&larr; Previous</a></li>
+        <li class="prev"><a href="/instruction/2015/02/04/first-post" title="Basic MarkDown Syntax for Jekyll">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/development/2015/02/24/django1" title="Learning Django (1)">Next &rarr;</a></li>
+        <li class="next disabled"><a>Next &rarr;</a>
       
       </ul>
     </div>
@@ -235,7 +213,7 @@ multiple lines: \~~~</p>
   
   <div class="span4">
     <h4>Published</h4>
-    <div class="date"><span>04 February 2015</span></div>
+    <div class="date"><span>24 February 2015</span></div>
 
   
     <h4>Tags</h4>
@@ -246,9 +224,11 @@ multiple lines: \~~~</p>
 
   
      
-    	<li><a href="/tags.html#First-ref">First <span>1</span></a></li>
+    	<li><a href="/tags.html#Django-ref">Django <span>1</span></a></li>
      
-    	<li><a href="/tags.html#MarkDown-ref">MarkDown <span>1</span></a></li>
+    	<li><a href="/tags.html#Web Development-ref">Web Development <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#学习笔记-ref">学习笔记 <span>1</span></a></li>
     
   
 
