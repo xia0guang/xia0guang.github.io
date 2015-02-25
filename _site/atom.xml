@@ -4,7 +4,7 @@
  <title>Green  Light</title>
  <link href="http://xia0guang.github.io/" rel="self"/>
  <link href="http://xia0guang.github.io"/>
- <updated>2015-02-24T15:32:57-08:00</updated>
+ <updated>2015-02-24T16:01:12-08:00</updated>
  <id>http://xia0guang.github.io</id>
  <author>
    <name>Ray Wu</name>
@@ -22,8 +22,7 @@
 
 &lt;h3 id=&quot;django-&quot;&gt;Django 的安装&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;$ pip install django&lt;/code&gt;&lt;br /&gt;
- 但是我要提到的是&lt;code&gt;virtualenv&lt;/code&gt;工具的使用, 这是一个创造isolated environment的工具, 可以为不同的virtual environment 安装不同版本的python, 不同的framework, 互不干扰, 很适合做学习开发使用.  以下是重要的virtualenv command:&lt;br /&gt;
- &lt;!--more--&gt;&lt;br /&gt;
+ 但是我要提到的是&lt;a href=&quot;https://virtualenv.pypa.io&quot;&gt;&lt;code&gt;virtualenv&lt;/code&gt;&lt;/a&gt;工具的使用, 这是一个创造isolated environment的工具, 可以为不同的virtual environment 安装不同版本的python, 不同的framework, 互不干扰, 很适合做学习开发使用.  以下是重要的virtualenv command: &lt;br /&gt;
  1. &lt;code&gt;$ virtualenv venv&lt;/code&gt;: 在当前directory下创建virtual environment;  &lt;/p&gt;
 
 &lt;ol&gt;
@@ -37,13 +36,10 @@
     &lt;p&gt;&lt;code&gt;$ deactivate&lt;/code&gt;:注销virtual environment.  &lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;$ pip freeze &amp;gt; requirements.txt&lt;/code&gt; 和 &lt;code&gt;pip install -r requirements.txt&lt;/code&gt;: 分别为保存当前环境参数 和 load所需环境.   &lt;/p&gt;
+    &lt;p&gt;&lt;code&gt;$ pip freeze &amp;gt; requirements.txt&lt;/code&gt; 和 &lt;code&gt;pip install -r requirements.txt&lt;/code&gt;: 分别为保存当前环境参数 和 load所需环境. &lt;br /&gt;
+  &lt;!--more--&gt; 
+###Start Project&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;start-project&quot;&gt;Start Project&lt;/h3&gt;
-
-&lt;ol&gt;
   &lt;li&gt;
     &lt;h3 id=&quot;settings&quot;&gt;settings&lt;/h3&gt;
     &lt;ul&gt;

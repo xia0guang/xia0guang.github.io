@@ -121,7 +121,23 @@
 
 <h3 id="django-">Django 的安装</h3>
 <p><code>$ pip install django</code><br />
- 但是我要提到的是<code>virtualenv</code>工具的使用, 这是一个创造isolated environment的工具, 可以为不同的virtual environment 安装不同版本的python, 不同的framework, 互不干扰, 很适合做学习开发使用.  以下是重要的virtualenv command:  </p>
+ 但是我要提到的是<a href="https://virtualenv.pypa.io"><code>virtualenv</code></a>工具的使用, 这是一个创造isolated environment的工具, 可以为不同的virtual environment 安装不同版本的python, 不同的framework, 互不干扰, 很适合做学习开发使用.  以下是重要的virtualenv command: <br />
+ 1. <code>$ virtualenv venv</code>: 在当前directory下创建virtual environment;  </p>
+
+<ol>
+  <li>
+    <p><code>$ virtualenv -p /usr/bin/python2.7 venv</code>: 设置python版本, 其中路径为所需版本python所在目录. (备注: Mac下面python3.4路径为/Library/Frameworks/Python.framework/Versions/3.4/bin/python3.4).  </p>
+  </li>
+  <li>
+    <p><code>$ source venv/bin/activate</code>:激活virtual environment. 此时terminal应该显示前缀<code>(venv)Your-Computer:your_project UserName$ </code>.    </p>
+  </li>
+  <li>
+    <p><code>$ deactivate</code>:注销virtual environment.  </p>
+  </li>
+  <li>
+    <p><code>$ pip freeze &gt; requirements.txt</code> 和 <code>pip install -r requirements.txt</code>: 分别为保存当前环境参数 和 load所需环境.   </p>
+  </li>
+</ol>
 
 
 
