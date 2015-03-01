@@ -8,5 +8,6 @@ http://xia0guang.github.io/rss.xml
 http://xia0guang.github.io/sitemap.txt
 http://xia0guang.github.io/tags.html
 
+http://xia0guang.github.io/productivity/2015/02/28/top-ten-intellij-idea-shortcuts
 http://xia0guang.github.io/development/2015/02/24/django1
 http://xia0guang.github.io/instruction/2015/02/04/first-post

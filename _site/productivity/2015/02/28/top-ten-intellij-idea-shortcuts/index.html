@@ -3,8 +3,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    
+    <title>Top Ten Shortcuts for intelliJ IDEA</title>
+    <meta name="description" content="">
     <meta name="author" content="Ray Wu">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -112,10 +112,12 @@
 
       <div class="content">
         
-<ul class="posts">
-  
-    <li>
-    <h2><a href="/productivity/2015/02/28/top-ten-intellij-idea-shortcuts">Top Ten Shortcuts for intelliJ IDEA</a></h2>
+<div class="page-header">
+  <h1>Top Ten Shortcuts for intelliJ IDEA </small></h1>
+</div>
+
+<div class="row">
+  <div class="span10">
     
 <p>转载于<a href="http://blog.csdn.net/dc_726/article/details/42784275">十大Intellij IDEA快捷键</a>  </p>
 
@@ -150,73 +152,119 @@
   </li>
 </ol>
 
-
-
-    <a href="/productivity/2015/02/28/top-ten-intellij-idea-shortcuts">More » </a>
-    </li>
-    <hr />
-    
-  
-    <li>
-    <h2><a href="/development/2015/02/24/django1">Learning Django (1)</a></h2>
-    
-<p>今天算是第一次正式的开始启用这个博客了, 第一篇是关于Django学习的, 这个Django本来一直就是想学但是没有真正的决定学习, 这次正好趁着同学有需求让我做一个最简单的网站的机会, 系统的学习一下如何使用Django. 本来其实我是不太会做笔记的, 从小到大就没有写过像样的笔记, 但是我觉得人有时候就得勇于做出改变和相信自己能成功改变, 坚持做好学习笔记这个算是我2015的一个目标吧. </p>
-
-<h3 id="django-">Django 的安装</h3>
-<p><code>$ pip install django</code><br />
- 但是我要提到的是<a href="https://virtualenv.pypa.io"><code>virtualenv</code></a>工具的使用, 这是一个创造isolated environment的工具, 可以为不同的virtual environment 安装不同版本的python, 不同的framework, 互不干扰, 很适合做学习开发使用.  以下是重要的virtualenv command: <br />
- 1. <code>$ virtualenv venv</code>: 在当前directory下创建virtual environment;  </p>
+<!--more-->
 
 <ol>
   <li>
-    <p><code>$ virtualenv -p /usr/bin/python2.7 venv</code>: 设置python版本, 其中路径为所需版本python所在目录. (备注: Mac下面python3.4路径为/Library/Frameworks/Python.framework/Versions/3.4/bin/python3.4).  </p>
+    <p>代码生成:<br />
+ <code>fori</code>/<code>sout</code>/<code>psvm</code> + <code>Tab</code>: 可生成循环、System.out、main方法等boilerplate样板代码 
+     * 另外，Intellij IDEA 13中加入了后缀自动补全功能(Postfix Completion)，比模板生成更加灵活和强大。例如要输入for(User user : users)只需输入user.for+Tab。再比如，要输入Date birthday = user.getBirthday();只需输入user.getBirthday().var+Tab即可   </p>
+
+    <p><code>Command</code> + <code>J</code>: 查看所有模板<br />
+ <code>Command</code> + <code>O</code>: Override  </p>
   </li>
   <li>
-    <p><code>$ source venv/bin/activate</code>:激活virtual environment. 此时terminal应该显示前缀<code>(venv)Your-Computer:your_project UserName$ </code>.    </p>
+    <p>编辑:<br />
+ <code>Command</code> + <code>W</code>/<code>Command</code> + <code>Shift</code> + <code>W</code>: 自动按语法选中代码或反向选中<br />
+ <code>Command</code> + <code>Y</code>: 删除行<br />
+ <code>Command</code> + <code>D</code>: 复制行<br />
+ <code>Command</code> + <code>&lt;</code>/<code>&gt;</code>: 折叠代码  </p>
   </li>
   <li>
-    <p><code>$ deactivate</code>:注销virtual environment.  </p>
+    <p>查找打开:<br />
+ <code>Command</code> + <code>O</code>/<code>Command</code> + <code>Shift</code> + <code>O</code>: 类似Eclipse, 可以打开类或资源, 但Intellij更加智能一些，我们输入的任何字符都将看作模糊匹配，省却了Eclipse中还有输入*的麻烦。最新版本的IDEA还加入了Search Everywhere功能，只需按Shift+Shift即可在一个弹出框中搜索任何东西，包括类、资源、配置项、方法等等<br />
+ <code>Ctrl</code> + <code>H</code>: 打开类层次窗口<br />
+ <code>Command</code> + <code>B</code>/<code>Command</code> + <code>Alt</code> + <code>B</code>: 分别对应父类或父方法declaration和子类或子方法implementation  </p>
   </li>
   <li>
-    <p><code>$ pip freeze &gt; requirements.txt</code> 和 <code>pip install -r requirements.txt</code>: 分别为保存当前环境参数 和 load所需环境.   </p>
+    <p>其他辅助:<br />
+ <code>Command</code> + <code>Shift</code> + <code>A</code>: 可以查找所有Intellij的命令，并且每个命令后面还有其快捷键。所以它不仅是一大神键，也是查找学习快捷键的工具<br />
+ <code>Ctrl</code> + <code>Alt</code> + <code>O</code>: 格式化 import 列表<br />
+ <code>Command</code> + <code>Alt</code> + <code>L</code>: 格式化代码<br />
+ <code>Command</code> + <code>F4</code>: 关闭当前标签<br />
+ <code>Shift</code> + <code>F10</code>/<code>Shift</code> + <code>Alt</code> + <code>F10</code>: 运行当前程序/选择程序运行<br />
+ <code>F7</code>,<code>F8</code>,<code>F9</code>: 分别对应 Step into，Step over，Continue  </p>
+  </li>
+  <li>
+    <p>最终榜单:  </p>
+    <ul>
+      <li>Top #10切来切去：<code>Ctrl</code>+<code>Tab</code></li>
+      <li>Top #9选你所想：<code>Command</code>+<code>W</code></li>
+      <li>Top #8代码生成：<code>Template/Postfix</code> +<code>Tab</code></li>
+      <li>Top #7发号施令：<code>Command</code>+<code>Shift</code>+<code>A</code></li>
+      <li>Top #6无处藏身(search in every where)：<code>Shift</code>+<code>Shift</code></li>
+      <li>Top #5自动完成：<code>Command</code>+<code>Shift</code>+<code>Enter</code></li>
+      <li>Top #4创造万物：<code>Alt</code>+<code>Insert</code><br />
+ (太难割舍，前三名并列吧！)</li>
+      <li>Top #1智能补全：<code>Ctrl</code>+<code>Shift</code>+<code>Space</code></li>
+      <li>Top #1自我修复：<code>Alt</code>+<code>Enter</code></li>
+      <li>Top #1重构一切：<code>Command</code>+<code>Shift</code>+<code>Alt</code>+<code>T</code>  </li>
+    </ul>
   </li>
 </ol>
 
 
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/development/2015/02/24/django1" title="Learning Django (1)">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next disabled"><a>Next &rarr;</a>
+      
+      </ul>
+    </div>
+    <hr>
+    
 
-    <a href="/development/2015/02/24/django1">More » </a>
-    </li>
-    <hr />
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'green-light'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>28 February 2015</span></div>
+
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#intelliJ-IDEA-ref">intelliJ-IDEA <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#Shortcuts-ref">Shortcuts <span>1</span></a></li>
     
   
-    <li>
-    <h2><a href="/instruction/2015/02/04/first-post">Basic MarkDown Syntax for Jekyll</a></h2>
+
+
+
+    </ul>
     
-<h6 id="this-is-repost-from-kramdown-syntax-documentationhttpkramdowngettalongorgsyntaxhtmlline-wrapping">this is repost from <a href="http://kramdown.gettalong.org/syntax.html#line-wrapping">kramdown syntax documentation</a></h6>
-
-<h4 id="paragraphs">Paragraphs</h4>
-<pre><code>On July 2, an alien mothership entered Earth's orbit and deployed several dozen saucer-shaped "destroyer" spacecraft, each 15 miles (24 km) wide.
-</code></pre>
-
-<h4 id="headings">Headings</h4>
-<pre><code># The largest heading (an &lt;h1&gt; tag)   
-## The second largest heading (an &lt;h2&gt; tag)  
-###### The 6th largest heading (an &lt;h6&gt; tag)  
-</code></pre>
-
-<h4 id="blockquotes">Blockquotes</h4>
-<pre><code>&gt;In the words of Abraham Lincoln: 
-&gt;&gt; Pardon my french
-</code></pre>
-
-
-
-    <a href="/instruction/2015/02/04/first-post">More » </a>
-    </li>
-    <hr />
-    
-  
-</ul>
+  </div>
+</div>
 
 
       </div>
